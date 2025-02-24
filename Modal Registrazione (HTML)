@@ -71,3 +71,150 @@
     </form>
   </div>
 </div>
+<!-- Modal per la Registrazione (stile Amazon) -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+      <img src="images/logo.png" alt="Logo La Casa del Nerd" class="modal-logo">
+    </div>
+    <h2>Crea il tuo account</h2>
+    <form id="registerForm" action="#" method="post">
+      <div class="form-group">
+        <label for="regNome">Nome</label>
+        <input type="text" id="regNome" name="regNome" placeholder="Inserisci il tuo nome" required>
+      </div>
+      <div class="form-group">
+        <label for="regCognome">Cognome</label>
+        <input type="text" id="regCognome" name="regCognome" placeholder="Inserisci il tuo cognome" required>
+      </div>
+      <div class="form-group">
+        <label for="regDataNascita">Data di nascita</label>
+        <input type="date" id="regDataNascita" name="regDataNascita" required>
+      </div>
+      <div class="form-group">
+        <label for="regLuogoNascita">Luogo di nascita</label>
+        <select id="regLuogoNascita" name="regLuogoNascita" required>
+          <option value="" disabled selected>Seleziona una città</option>
+          <option value="Roma">Roma</option>
+          <option value="Milano">Milano</option>
+          <option value="Napoli">Napoli</option>
+          <!-- Inserisci qui tutte le città d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regCittaResidenza">Città di residenza</label>
+        <select id="regCittaResidenza" name="regCittaResidenza" required>
+          <option value="" disabled selected>Seleziona una città</option>
+          <option value="Roma">Roma</option>
+          <option value="Milano">Milano</option>
+          <option value="Napoli">Napoli</option>
+          <!-- Inserisci qui tutte le città d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regVia">Via o Piazza</label>
+        <input type="text" id="regVia" name="regVia" placeholder="Inserisci la via o piazza" required>
+      </div>
+      <div class="form-group">
+        <label for="regNumeroCivico">Numero civico</label>
+        <input type="text" id="regNumeroCivico" name="regNumeroCivico" placeholder="Inserisci il numero civico" required>
+      </div>
+      <div class="form-group">
+        <label for="regCap">CAP</label>
+        <select id="regCap" name="regCap" required>
+          <option value="" disabled selected>Seleziona il CAP</option>
+          <option value="00100">00100</option>
+          <option value="20100">20100</option>
+          <!-- Inserisci qui tutti i codici di avviamento postale d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regProvincia">Provincia</label>
+        <select id="regProvincia" name="regProvincia" required>
+          <option value="" disabled selected>Seleziona la provincia</option>
+          <option value="RM">RM</option>
+          <option value="MI">MI</option>
+          <option value="TO">TO</option>
+          <option value="NA">NA</option>
+          <!-- Inserisci qui tutte le province d'Italia -->
+        </select>
+      </div>
+      <button type="submit" class="submit-button">Registrati</button>
+    </form>
+  </div>
+</div>
+<!-- Modal per la Registrazione (stile Amazon) -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+      <img src="images/logo.png" alt="Logo La Casa del Nerd" class="modal-logo">
+    </div>
+    <h2>Crea il tuo account</h2>
+    <form id="registerForm" action="#" method="post">
+      <div class="form-group">
+        <label for="regNome">Nome</label>
+        <input type="text" id="regNome" name="regNome" placeholder="Inserisci il tuo nome" required>
+      </div>
+      <div class="form-group">
+        <label for="regCognome">Cognome</label>
+        <input type="text" id="regCognome" name="regCognome" placeholder="Inserisci il tuo cognome" required>
+      </div>
+      <div class="form-group">
+        <label for="regDataNascita">Data di nascita</label>
+        <input type="date" id="regDataNascita" name="regDataNascita" required>
+      </div>
+      <div class="form-group">
+        <label for="regLuogoNascita">Luogo di nascita</label>
+        <select id="regLuogoNascita" name="regLuogoNascita" required>
+          <option value="" disabled selected>Seleziona una città</option>
+          <option value="Roma">Roma</option>
+          <option value="Milano">Milano</option>
+          <option value="Napoli">Napoli</option>
+          <!-- Inserisci qui tutte le città d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regCittaResidenza">Città di residenza</label>
+        <select id="regCittaResidenza" name="regCittaResidenza" required>
+          <option value="" disabled selected>Seleziona una città</option>
+          <option value="Roma">Roma</option>
+          <option value="Milano">Milano</option>
+          <option value="Napoli">Napoli</option>
+          <!-- Inserisci qui tutte le città d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regVia">Via o Piazza</label>
+        <input type="text" id="regVia" name="regVia" placeholder="Inserisci la via o piazza" required>
+      </div>
+      <div class="form-group">
+        <label for="regNumeroCivico">Numero civico</label>
+        <input type="text" id="regNumeroCivico" name="regNumeroCivico" placeholder="Inserisci il numero civico" required>
+      </div>
+      <div class="form-group">
+        <label for="regCap">CAP</label>
+        <select id="regCap" name="regCap" required>
+          <option value="" disabled selected>Seleziona il CAP</option>
+          <option value="00100">00100</option>
+          <option value="20100">20100</option>
+          <!-- Inserisci qui tutti i codici di avviamento postale d'Italia -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="regProvincia">Provincia</label>
+        <select id="regProvincia" name="regProvincia" required>
+          <option value="" disabled selected>Seleziona la provincia</option>
+          <option value="RM">RM</option>
+          <option value="MI">MI</option>
+          <option value="TO">TO</option>
+          <option value="NA">NA</option>
+          <!-- Inserisci qui tutte le province d'Italia -->
+        </select>
+      </div>
+      <button type="submit" class="submit-button">Registrati</button>
+    </form>
+  </div>
+</div>
+

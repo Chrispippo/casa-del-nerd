@@ -1,3 +1,8 @@
+/* Abilita lo scroll fluido */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset di base */
 * {
   margin: 0;
@@ -5,154 +10,70 @@
   box-sizing: border-box;
 }
 
-/* Corpo e font */
+/* Stili globali */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
-/* HEADER */
-header {
+/* Navigazione fissa in alto */
+.scroll-nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
+  background: #131921;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.7);
 }
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-}
-.top-header .logo h1 {
-  color: #fff;
-  font-size: 28px;
-}
-.main-nav ul {
+.scroll-nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
+  padding: 10px 0;
 }
-.main-nav ul li a {
-  text-decoration: none;
+.scroll-nav ul li a {
   color: #fff;
+  text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
 }
-.main-nav ul li a:hover,
-.main-nav ul li a.active {
-  color: #febd69;
-}
-
-/* HERO SECTION a pagina intera */
-.hero {
-  height: 100vh;
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px; /* per evitare la sovrapposizione col header */
-}
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-content {
-  text-align: center;
-  color: #fff;
-  z-index: 2;
-}
-.hero-content h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.hero-content p {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-.hero-content .btn {
-  text-decoration: none;
+.scroll-nav ul li a:hover {
   background: #febd69;
   color: #333;
-  padding: 12px 25px;
-  font-size: 18px;
   border-radius: 4px;
-  transition: background 0.3s ease;
-}
-.hero-content .btn:hover {
-  background: #e0a85a;
 }
 
-/* SEZIONE MENU CON SOTTOMENU SEMPRE VISIBILI */
-.full-menu {
-  background: #f7f7f7;
-  padding: 40px 20px;
-  text-align: center;
+/* Spaziatura per non far sovrapporre il contenuto al menu fisso */
+main {
+  padding-top: 60px;
 }
-.menu-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+
+/* Stile delle sezioni a scorrimento */
+.scroll-section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ddd;
 }
-.full-menu h2 {
+.scroll-section h2 {
+  margin-bottom: 20px;
   font-size: 32px;
-  margin-bottom: 30px;
-  color: #333;
-}
-.category-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 0;
-}
-.category-menu > li {
-  text-align: left;
-}
-.category-menu > li > a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #007185;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-.submenu {
-  list-style: none;
-  display: block; /* sempre visibile */
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 0;
-}
-.submenu li {
-  margin: 5px 0;
-}
-.submenu li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #333;
-  display: block;
-}
-.submenu li a:hover {
-  color: #007185;
+  text-align: center;
 }
 
-/* FOOTER */
-footer {
-  background: #131921;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+/* Stile specifico per il form Account */
+.account-form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
+.account-form .form-group {
+  margin-bottom: 20px;
+}
+.account-form .form-group label {
+  display: block

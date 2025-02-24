@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const registerButton = document.getElementById('registerButton');
+  const registerModal = document.getElementById('registerModal');
+  const closeButtons = document.querySelectorAll('.modal .close');
+
+  // Apri il modal di registrazione
+  registerButton.addEventListener('click', () => {
+    registerModal.style.display = 'block';
+  });
+
+  // Chiudi il modal cliccando sulla "X"
+  closeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal').style.display = 'none';
+    });
+  });
+
+  // Chiudi il modal cliccando fuori dal contenuto
+  window.addEventListener('click', (e) => {
+    if (e.target === registerModal) {
+      registerModal.style.display = 'none';
+    }
+  });
+});

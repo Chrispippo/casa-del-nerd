@@ -1,6 +1,6 @@
-// Script per gestire l'apertura/chiusura dei sottomenu
+// Script per gestire l'apertura/chiusura dei sottomenu nella sidebar
 document.addEventListener('DOMContentLoaded', () => {
-  const menuLinks = document.querySelectorAll('.menu > li > a');
+  const menuLinks = document.querySelectorAll('.sidebar .menu > li > a');
   menuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const submenu = link.nextElementSibling;

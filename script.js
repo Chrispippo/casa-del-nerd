@@ -1,6 +1,6 @@
 // script.js
-// Qui potrai inserire eventuali funzionalità interattive aggiuntive.
-// Al momento il menu a tendina si attiva con :hover grazie al CSS.
+// Attualmente non sono necessari script per la visualizzazione fissa dei sottomenu.
+// Puoi aggiungere eventuali funzionalità interattive in futuro.
 document.addEventListener('DOMContentLoaded', () => {
   // Eventuali script futuri...
 });

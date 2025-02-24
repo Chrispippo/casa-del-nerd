@@ -1,13 +1,5 @@
-// Script per gestire l'apertura/chiusura dei sottomenu nella sidebar
+// script.js
+// Qui potrai inserire eventuali funzionalità interattive (es. animazioni, gestione menu, ecc.)
 document.addEventListener('DOMContentLoaded', () => {
-  const menuLinks = document.querySelectorAll('.sidebar .menu > li > a');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      const submenu = link.nextElementSibling;
-      if (submenu && submenu.classList.contains('submenu')) {
-        e.preventDefault();
-        submenu.classList.toggle('open');
-      }
-    });
-  });
+  // Attualmente il layout è statico; aggiungi qui il codice JS per eventuali interazioni.
 });

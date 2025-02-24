@@ -8,65 +8,64 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header stile Amazon -->
+  <!-- Header a pagina intera con trasparenza -->
   <header>
     <div class="top-header">
       <div class="logo">
         <h1>Casa del Nerd</h1>
       </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Cerca prodotti...">
-        <button>Cerca</button>
-      </div>
-      <div class="account-cart">
-        <a href="admin.html">Account</a>
-        <a href="cart.html">Carrello</a>
-      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Prodotti</a></li>
+          <li><a href="buyer_requests.html">Richieste</a></li>
+          <li><a href="shipping.html">Spedizione</a></li>
+          <li><a href="admin.html">Area Riservata</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Prodotti</a></li>
-        <li><a href="buyer_requests.html">Richieste</a></li>
-        <li><a href="shipping.html">Spedizione</a></li>
-        <li><a href="admin.html">Area Riservata</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Corpo principale -->
-  <main>
-    <section class="banner">
-      <img src="images/banner.jpg" alt="Banner Casa del Nerd">
-    </section>
-    <section class="featured">
-      <h2>Offerte del giorno</h2>
-      <div class="products">
-        <div class="product">
-          <img src="images/prodotto1.jpg" alt="Prodotto 1">
-          <h3>Prodotto 1</h3>
-          <p>Breve descrizione del prodotto 1.</p>
-          <button>Paga con Carta</button>
-        </div>
-        <div class="product">
-          <img src="images/prodotto2.jpg" alt="Prodotto 2">
-          <h3>Prodotto 2</h3>
-          <p>Breve descrizione del prodotto 2.</p>
-          <button>Paga con Carta</button>
-        </div>
+  <!-- Sezione Hero a pagina intera -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Benvenuti in Casa del Nerd</h2>
+        <p>Il tuo negozio online per tutto ciò che è nerd, geek e fantastico!</p>
+        <a href="products.html" class="btn">Scopri i Prodotti</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Sezione "Menu a piena pagina" per le categorie -->
+  <section class="full-page-menu">
+    <h2>Esplora le Categorie</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <a href="products.html">
+          <img src="images/elettronica.jpg" alt="Elettronica">
+          <h3>Elettronica</h3>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="products.html">
+          <img src="images/giochi.jpg" alt="Giochi">
+          <h3>Giochi</h3>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="products.html">
+          <img src="images/libri.jpg" alt="Libri & Gadget">
+          <h3>Libri & Gadget</h3>
+        </a>
+      </div>
+      <!-- Aggiungi ulteriori categorie se necessario -->
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
-      <nav class="footer-nav">
-        <a href="shipping.html">Spedizione</a> | 
-        <a href="buyer_requests.html">Richieste</a>
-      </nav>
-    </div>
+    <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
   </footer>
 </body>
 </html>

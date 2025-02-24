@@ -1,6 +1,6 @@
 // script.js
-// Attualmente non sono necessari script per la visualizzazione fissa dei sottomenu.
-// Puoi aggiungere eventuali funzionalità interattive in futuro.
+// Al momento non sono necessarie funzionalità JavaScript aggiuntive per il semplice scroll fluido.
+// Puoi aggiungere ulteriori interazioni se necessario.
 document.addEventListener('DOMContentLoaded', () => {
   // Eventuali script futuri...
 });

@@ -8,19 +8,98 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header: Logo al centro -->
+  <!-- Header: Logo centrato e pulsante "Accedi" in alto a destra -->
   <header>
     <div class="header-content">
       <h1>La Casa del Nerd</h1>
+      <button id="loginButton" class="login-button">Accedi</button>
     </div>
   </header>
-
-  <!-- Top Bar: eventuale barra di ricerca o navigazione secondaria (opzionale) -->
+  
+  <!-- Top Bar: Barra di ricerca opzionale -->
   <div class="top-bar">
     <div class="search">
       <input type="text" placeholder="Cerca...">
       <button type="button">🔍</button>
     </div>
   </div>
-
-  <!-- Main: Sezioni de
+  
+  <!-- Main: Sezioni dei prodotti -->
+  <main>
+    <!-- Sezione Articoli 3D -->
+    <section class="section" id="articoli-3d">
+      <h2>Articoli 3D</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/3d-product1.jpg" alt="Articolo 3D 1">
+          <h3>Articolo 3D 1</h3>
+          <p class="price">€29.99</p>
+        </article>
+        <article class="product-card">
+          <img src="images/3d-product2.jpg" alt="Articolo 3D 2">
+          <h3>Articolo 3D 2</h3>
+          <p class="price">€39.99</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- Sezione Cosplayer -->
+    <section class="section" id="cosplayer">
+      <h2>Cosplayer</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/cosplayer1.jpg" alt="Cosplayer 1">
+          <h3>Cosplayer 1</h3>
+          <p class="price">€49.99</p>
+        </article>
+        <article class="product-card">
+          <img src="images/cosplayer2.jpg" alt="Cosplayer 2">
+          <h3>Cosplayer 2</h3>
+          <p class="price">€59.99</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- Sezione Accessori Informatica e Articoli Vari -->
+    <section class="section" id="accessori-informatica">
+      <h2>Accessori Informatica e Articoli Vari</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/accessorio1.jpg" alt="Accessorio 1">
+          <h3>Accessorio 1</h3>
+          <p class="price">€19.99</p>
+        </article>
+        <article class="product-card">
+          <img src="images/accessorio2.jpg" alt="Accessorio 2">
+          <h3>Accessorio 2</h3>
+          <p class="price">€24.99</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 La Casa del Nerd. Tutti i diritti riservati.</p>
+  </footer>
+  
+  <!-- Modal Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Accedi</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="loginName">Nome:</label>
+          <input type="text" id="loginName" name="loginName" placeholder="Inserisci il tuo nome" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Inserisci la tua password" required>
+        </div>
+        <button type="submit">Accedi</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

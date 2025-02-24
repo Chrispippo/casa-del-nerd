@@ -3,51 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Commerce Style Shopify</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Il Mio Negozio Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header con navigazione principale -->
   <header>
-    <nav class="main-nav">
+    <h1>Benvenuti nel Mio Negozio</h1>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="submenu">
-          <a href="#">Prodotti</a>
-          <ul class="dropdown">
-            <li><a href="prodotti/categoria1.html">Categoria 1</a></li>
-            <li><a href="prodotti/categoria2.html">Categoria 2</a></li>
-          </ul>
-        </li>
-        <li><a href="spedizione.html">Spedizione</a></li>
-        <li><a href="sessione.html">Richieste</a></li>
+        <li><a href="products.html">Prodotti</a></li>
+        <li><a href="buyer_requests.html">Richieste</a></li>
+        <li><a href="shipping.html">Spedizione</a></li>
+        <li><a href="admin.html">Area Riservata</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sidebar laterale con tendina delle categorie -->
-  <aside class="sidebar">
-    <h3>Categorie</h3>
-    <ul>
-      <li><a href="prodotti/categoria1.html">Categoria 1</a></li>
-      <li><a href="prodotti/categoria2.html">Categoria 2</a></li>
-    </ul>
-  </aside>
-
-  <!-- Sezione principale: elenco prodotti -->
   <main>
-    <section class="products">
-      <h2>Prodotti in Vendita</h2>
-      <!-- Esempio di prodotto -->
-      <div class="product-card">
-        <img src="images/prodotto1.jpg" alt="Prodotto 1">
-        <h3>Prodotto 1</h3>
-        <p>Descrizione breve del prodotto 1.</p>
-        <button class="buy-btn" data-prod="Prodotto 1">Acquista con Carta</button>
-      </div>
-      <!-- Puoi aggiungere altri prodotti seguendo lo stesso schema -->
+    <section class="intro">
+      <h2>Il Tuo Spazio di Shopping Online</h2>
+      <p>Scopri i nostri prodotti suddivisi per categorie. Un’esperienza di acquisto semplice, sicura e accattivante!</p>
+    </section>
+    <section class="payment">
+      <h2>Pagamento Sicuro con Carta</h2>
+      <p>Paga comodamente con carta di credito o debito, in totale sicurezza.</p>
     </section>
   </main>
 
-  <!-- Modal per pagamento con carta -->
-  <div id="
+  <footer>
+    <p>&copy; 2025 Il Mio Negozio Online. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>

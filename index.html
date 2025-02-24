@@ -8,7 +8,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header a pagina intera con trasparenza -->
+  <!-- Header con logo e navigazione principale -->
   <header>
     <div class="top-header">
       <div class="logo">
@@ -20,6 +20,7 @@
           <li><a href="products.html">Prodotti</a></li>
           <li><a href="buyer_requests.html">Richieste</a></li>
           <li><a href="shipping.html">Spedizione</a></li>
+          <li><a href="account.html">Account</a></li>
           <li><a href="admin.html">Area Riservata</a></li>
         </ul>
       </nav>
@@ -37,29 +38,35 @@
     </div>
   </section>
 
-  <!-- Sezione "Menu a piena pagina" per le categorie -->
-  <section class="full-page-menu">
-    <h2>Esplora le Categorie</h2>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <a href="products.html">
-          <img src="images/elettronica.jpg" alt="Elettronica">
-          <h3>Elettronica</h3>
-        </a>
-      </div>
-      <div class="menu-item">
-        <a href="products.html">
-          <img src="images/giochi.jpg" alt="Giochi">
-          <h3>Giochi</h3>
-        </a>
-      </div>
-      <div class="menu-item">
-        <a href="products.html">
-          <img src="images/libri.jpg" alt="Libri & Gadget">
-          <h3>Libri & Gadget</h3>
-        </a>
-      </div>
-      <!-- Aggiungi ulteriori categorie se necessario -->
+  <!-- Sezione Menu e Sottocartelle visualizzata sotto il banner principale -->
+  <section class="full-menu">
+    <div class="menu-wrapper">
+      <h2>Esplora le Categorie</h2>
+      <ul class="category-menu">
+        <li>
+          <a href="products.html?cat=elettronica">Elettronica</a>
+          <ul class="submenu">
+            <li><a href="products.html?cat=smartphone">Smartphone</a></li>
+            <li><a href="products.html?cat=laptop">Laptop</a></li>
+            <li><a href="products.html?cat=accessori">Accessori</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="products.html?cat=giochi">Giochi</a>
+          <ul class="submenu">
+            <li><a href="products.html?cat=console">Console</a></li>
+            <li><a href="products.html?cat=videogiochi">Videogiochi</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="products.html?cat=libri-gadget">Libri & Gadget</a>
+          <ul class="submenu">
+            <li><a href="products.html?cat=fumetti">Fumetti</a></li>
+            <li><a href="products.html?cat=gadget">Gadget</a></li>
+          </ul>
+        </li>
+        <!-- Aggiungi altre categorie se necessario -->
+      </ul>
     </div>
   </section>
 

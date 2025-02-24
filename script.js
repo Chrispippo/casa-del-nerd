@@ -1,29 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Elementi dei modali e dei pulsanti
   const loginButton = document.getElementById('loginButton');
   const registerButton = document.getElementById('registerButton');
   const loginModal = document.getElementById('loginModal');
   const registerModal = document.getElementById('registerModal');
   const closeButtons = document.querySelectorAll('.modal .close');
 
-  // Apri il modal di login
+  // Apri modal Login
   loginButton.addEventListener('click', () => {
     loginModal.style.display = 'block';
   });
 
-  // Apri il modal di registrazione
+  // Apri modal Registrazione
   registerButton.addEventListener('click', () => {
     registerModal.style.display = 'block';
   });
 
-  // Aggiungi event listener per chiudere i modali cliccando sulla "X"
+  // Chiudi modal cliccando sulla "X"
   closeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      btn.parentElement.parentElement.style.display = 'none';
+      btn.closest('.modal').style.display = 'none';
     });
   });
 
-  // Chiudi il modal cliccando fuori dal contenuto
+  // Chiudi modal cliccando fuori dal contenuto
   window.addEventListener('click', (e) => {
     if (e.target === loginModal) {
       loginModal.style.display = 'none';

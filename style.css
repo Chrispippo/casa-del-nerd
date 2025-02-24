@@ -12,22 +12,41 @@ body {
   color: #333;
 }
 
-/* Header: testo al centro, grande e bold */
+/* Header: Logo centrato e pulsante "Accedi" in alto a destra */
 header {
   background-color: #fff;
   padding: 20px 15px;
-  text-align: center;
   border-bottom: 1px solid #ddd;
+  position: relative;
+  text-align: center;
+}
+
+.header-content {
+  position: relative;
 }
 
 .header-content h1 {
-  font-size: 48px;  /* dimensione grande */
-  font-weight: bold; /* bold */
+  font-size: 48px;
+  font-weight: bold;
   color: #333;
   margin: 0;
 }
 
-/* Top Bar: barra di ricerca opzionale */
+.login-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Top Bar: Barra di ricerca opzionale */
 .top-bar {
   background-color: #fff;
   padding: 10px 15px;
@@ -119,4 +138,67 @@ footer {
   font-size: 14px;
   color: #666;
   margin-top: 15px;
+}
+
+/* Modal Login */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal-content .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

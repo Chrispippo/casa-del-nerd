@@ -3,38 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Richieste Acquirenti - CASA DEL NERD</title>
+  <title>Richieste Acquirenti - Casa del Nerd</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Richieste degli Acquirenti</h1>
-    <nav>
+    <div class="top-header">
+      <div class="logo">
+        <h1>Casa del Nerd</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Cerca prodotti...">
+        <button>Cerca</button>
+      </div>
+      <div class="account-cart">
+        <a href="admin.html">Account</a>
+        <a href="cart.html">Carrello</a>
+      </div>
+    </div>
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Prodotti</a></li>
-        <li><a href="buyer_requests.html">Richieste</a></li>
+        <li><a href="buyer_requests.html" class="active">Richieste</a></li>
         <li><a href="shipping.html">Spedizione</a></li>
         <li><a href="admin.html">Area Riservata</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="requests">
-      <h2>Richieste Recenti</h2>
-      <!-- Esempio di richiesta -->
-      <div class="request-item">
-        <h3>Richiesta 1</h3>
-        <p>Dettagli della richiesta...</p>
-        <p>Email di riferimento: esempio@gmail.com</p>
-      </div>
-      <!-- Inserisci ulteriori richieste -->
-    </section>
+  <!-- Corpo pagina Richieste -->
+  <main class="buyer-requests">
+    <h2>Richieste degli Acquirenti</h2>
+    <div class="request-item">
+      <h3>Richiesta 1</h3>
+      <p>Dettagli della richiesta...</p>
+      <p>Email: esempio@mail.com</p>
+    </div>
+    <!-- Inserisci altre richieste se necessario -->
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Il Mio Negozio Online. Tutti i diritti riservati.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
+      <nav class="footer-nav">
+        <a href="shipping.html">Spedizione</a> | 
+        <a href="products.html">Prodotti</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

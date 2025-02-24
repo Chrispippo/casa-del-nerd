@@ -3,76 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Casa del Nerd</title>
+  <title>La Casa del Nerd - Home</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header con logo e navigazione principale -->
+  <!-- Header: logo e barra di ricerca -->
   <header>
-    <div class="top-header">
+    <div class="top-bar">
       <div class="logo">
-        <h1>Casa del Nerd</h1>
+        <h1>La Casa del Nerd</h1>
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="products.html">Prodotti</a></li>
-          <li><a href="buyer_requests.html">Richieste</a></li>
-          <li><a href="shipping.html">Spedizione</a></li>
-          <li><a href="account.html">Account</a></li>
-          <li><a href="admin.html">Area Riservata</a></li>
-        </ul>
-      </nav>
+      <div class="search">
+        <input type="text" placeholder="Cerca...">
+        <button type="button">🔍</button>
+      </div>
     </div>
   </header>
 
-  <!-- Sezione Hero a pagina intera -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h2>Benvenuti in Casa del Nerd</h2>
-        <p>Il tuo negozio online per tutto ciò che è nerd, geek e fantastico!</p>
-        <a href="products.html" class="btn">Scopri i Prodotti</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sezione Menu con sottomenù sempre visibili -->
-  <section class="full-menu">
-    <div class="menu-wrapper">
-      <h2>Esplora le Categorie</h2>
-      <ul class="category-menu">
-        <li>
-          <a href="products.html?cat=elettronica">Elettronica</a>
-          <ul class="submenu">
-            <li><a href="products.html?cat=smartphone">Smartphone</a></li>
-            <li><a href="products.html?cat=laptop">Laptop</a></li>
-            <li><a href="products.html?cat=accessori">Accessori</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="products.html?cat=giochi">Giochi</a>
-          <ul class="submenu">
-            <li><a href="products.html?cat=console">Console</a></li>
-            <li><a href="products.html?cat=videogiochi">Videogiochi</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="products.html?cat=libri-gadget">Libri &amp; Gadget</a>
-          <ul class="submenu">
-            <li><a href="products.html?cat=fumetti">Fumetti</a></li>
-            <li><a href="products.html?cat=gadget">Gadget</a></li>
-          </ul>
-        </li>
-        <!-- Aggiungi altre categorie se necessario -->
-      </ul>
-    </div>
-  </section>
+  <!-- Main: griglia dei prodotti -->
+  <main>
+    <section class="product-grid">
+      <!-- Prodotto 1 -->
+      <article class="product-card">
+        <img src="images/prodotto1.jpg" alt="Prodotto 1">
+        <h3>Prodotto 1</h3>
+        <p class="price">€19.99 <span class="old-price">€29.99</span></p>
+      </article>
+      <!-- Prodotto 2 -->
+      <article class="product-card">
+        <img src="images/prodotto2.jpg" alt="Prodotto 2">
+        <h3>Prodotto 2</h3>
+        <p class="price">€9.99 <span class="old-price">€15.99</span></p>
+      </article>
+      <!-- Prodotto 3 -->
+      <article class="product-card">
+        <img src="images/prodotto3.jpg" alt="Prodotto 3">
+        <h3>Prodotto 3</h3>
+        <p class="price">€12.50 <span class="old-price">€18.00</span></p>
+      </article>
+      <!-- Aggiungi ulteriori prodotti come necessario -->
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
+    <p>&copy; 2025 La Casa del Nerd. Tutti i diritti riservati.</p>
   </footer>
 </body>
 </html>

@@ -8,21 +8,55 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header: Titolo centrato e pulsanti "Accedi" e "Registrati" in alto a destra -->
+  <!-- Header -->
   <header>
     <div class="header-content">
-      <h1>La Casa del Nerd</h1>
-      <div class="auth-buttons">
+      <h1 class="site-title">La Casa del Nerd</h1>
+      <div class="nav-buttons">
         <button id="loginButton" class="auth-button">Accedi</button>
         <button id="registerButton" class="auth-button">Registrati</button>
+        <a href="cart.html" class="nav-link">Carrello</a>
+        <a href="contact.html" class="nav-link">Contatti</a>
       </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Cerca articoli...">
+      <button type="button">Cerca</button>
     </div>
   </header>
   
-  <!-- Contenuto principale (esempio) -->
+  <!-- Main: Griglia Prodotti (stile Wish) -->
   <main>
-    <section class="content">
-      <p>Benvenuto in La Casa del Nerd. Esplora i nostri prodotti e scopri il meglio per i veri appassionati!</p>
+    <section class="product-grid">
+      <!-- Esempio di prodotto -->
+      <div class="product-card">
+        <img src="images/prodotto1.jpg" alt="Prodotto 1">
+        <h3>Prodotto 1</h3>
+        <p class="price">€29.99</p>
+        <button class="add-to-cart">Aggiungi al Carrello</button>
+      </div>
+      <div class="product-card">
+        <img src="images/prodotto2.jpg" alt="Prodotto 2">
+        <h3>Prodotto 2</h3>
+        <p class="price">€19.99</p>
+        <button class="add-to-cart">Aggiungi al Carrello</button>
+      </div>
+      <div class="product-card">
+        <img src="images/prodotto3.jpg" alt="Prodotto 3">
+        <h3>Prodotto 3</h3>
+        <p class="price">€39.99</p>
+        <button class="add-to-cart">Aggiungi al Carrello</button>
+      </div>
+      <!-- Aggiungi ulteriori prodotti... -->
+    </section>
+    
+    <!-- Sezione Domande/Richieste -->
+    <section class="inquiries">
+      <h2>Domande o Richieste</h2>
+      <form id="inquiryForm" action="#" method="post">
+        <textarea name="inquiry" placeholder="Scrivi la tua domanda o richiesta..." required></textarea>
+        <button type="submit">Invia</button>
+      </form>
     </section>
   </main>
   
@@ -81,7 +115,6 @@
             <option value="Roma">Roma</option>
             <option value="Milano">Milano</option>
             <option value="Napoli">Napoli</option>
-            <option value="Torino">Torino</option>
             <!-- Aggiungi altre città -->
           </select>
         </div>
@@ -92,7 +125,6 @@
             <option value="Roma">Roma</option>
             <option value="Milano">Milano</option>
             <option value="Napoli">Napoli</option>
-            <option value="Torino">Torino</option>
             <!-- Aggiungi altre città -->
           </select>
         </div>
@@ -110,7 +142,6 @@
             <option value="" disabled selected>Seleziona il CAP</option>
             <option value="00100">00100</option>
             <option value="20100">20100</option>
-            <option value="10100">10100</option>
             <!-- Aggiungi altri CAP -->
           </select>
         </div>

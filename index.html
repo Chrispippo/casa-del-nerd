@@ -8,7 +8,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header: Titolo al centro e pulsanti "Accedi" e "Registrati" in alto a destra -->
+  <!-- Header: Titolo centrato e pulsanti "Accedi" e "Registrati" in alto a destra -->
   <header>
     <div class="header-content">
       <h1>La Casa del Nerd</h1>
@@ -19,10 +19,10 @@
     </div>
   </header>
   
-  <!-- Main content (puoi inserire qui il resto del sito, ad esempio le sezioni di prodotti) -->
+  <!-- Contenuto principale (esempio) -->
   <main>
     <section class="content">
-      <p>Benvenuto in La Casa del Nerd. Qui troverai i migliori articoli per i veri appassionati.</p>
+      <p>Benvenuto in La Casa del Nerd. Esplora i nostri prodotti e scopri il meglio per i veri appassionati!</p>
     </section>
   </main>
   
@@ -31,77 +31,81 @@
     <p>&copy; 2025 La Casa del Nerd. Tutti i diritti riservati.</p>
   </footer>
   
-  <!-- Modal per il Login -->
+  <!-- Modal per il Login (stile Amazon) -->
   <div id="loginModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
+      <div class="modal-header">
+        <img src="images/logo.png" alt="Logo La Casa del Nerd" class="modal-logo">
+      </div>
       <h2>Accedi</h2>
       <form id="loginForm" action="#" method="post">
         <div class="form-group">
-          <label for="loginName">Nome:</label>
+          <label for="loginName">Nome</label>
           <input type="text" id="loginName" name="loginName" placeholder="Inserisci il tuo nome" required>
         </div>
         <div class="form-group">
-          <label for="loginPassword">Password:</label>
+          <label for="loginPassword">Password</label>
           <input type="password" id="loginPassword" name="loginPassword" placeholder="Inserisci la tua password" required>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" class="submit-button">Login</button>
       </form>
     </div>
   </div>
   
-  <!-- Modal per la Registrazione -->
+  <!-- Modal per la Registrazione (stile Amazon) -->
   <div id="registerModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Registrati</h2>
+      <div class="modal-header">
+        <img src="images/logo.png" alt="Logo La Casa del Nerd" class="modal-logo">
+      </div>
+      <h2>Crea il tuo account</h2>
       <form id="registerForm" action="#" method="post">
         <div class="form-group">
-          <label for="regNome">Nome:</label>
+          <label for="regNome">Nome</label>
           <input type="text" id="regNome" name="regNome" placeholder="Inserisci il tuo nome" required>
         </div>
         <div class="form-group">
-          <label for="regCognome">Cognome:</label>
+          <label for="regCognome">Cognome</label>
           <input type="text" id="regCognome" name="regCognome" placeholder="Inserisci il tuo cognome" required>
         </div>
         <div class="form-group">
-          <label for="regDataNascita">Data di nascita:</label>
+          <label for="regDataNascita">Data di nascita</label>
           <input type="date" id="regDataNascita" name="regDataNascita" required>
         </div>
         <div class="form-group">
-          <label for="regLuogoNascita">Luogo di nascita:</label>
+          <label for="regLuogoNascita">Luogo di nascita</label>
           <select id="regLuogoNascita" name="regLuogoNascita" required>
             <option value="" disabled selected>Seleziona una città</option>
             <option value="Roma">Roma</option>
             <option value="Milano">Milano</option>
             <option value="Napoli">Napoli</option>
             <option value="Torino">Torino</option>
-            <option value="Palermo">Palermo</option>
             <!-- Aggiungi altre città -->
           </select>
         </div>
         <div class="form-group">
-          <label for="regCittaResidenza">Città di residenza:</label>
+          <label for="regCittaResidenza">Città di residenza</label>
           <select id="regCittaResidenza" name="regCittaResidenza" required>
             <option value="" disabled selected>Seleziona una città</option>
             <option value="Roma">Roma</option>
             <option value="Milano">Milano</option>
             <option value="Napoli">Napoli</option>
             <option value="Torino">Torino</option>
-            <option value="Palermo">Palermo</option>
             <!-- Aggiungi altre città -->
           </select>
         </div>
         <div class="form-group">
-          <label for="regVia">Via o Piazza:</label>
+          <label for="regVia">Via o Piazza</label>
           <input type="text" id="regVia" name="regVia" placeholder="Inserisci la via o piazza" required>
         </div>
         <div class="form-group">
-          <label for="regNumeroCivico">Numero civico:</label>
+          <label for="regNumeroCivico">Numero civico</label>
           <input type="text" id="regNumeroCivico" name="regNumeroCivico" placeholder="Inserisci il numero civico" required>
         </div>
         <div class="form-group">
-          <label for="regCap">CAP:</label>
+          <label for="regCap">CAP</label>
           <select id="regCap" name="regCap" required>
             <option value="" disabled selected>Seleziona il CAP</option>
             <option value="00100">00100</option>
@@ -111,20 +115,13 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="regProvincia">Provincia:</label>
+          <label for="regProvincia">Provincia</label>
           <select id="regProvincia" name="regProvincia" required>
             <option value="" disabled selected>Seleziona la provincia</option>
             <option value="RM">RM</option>
             <option value="MI">MI</option>
             <option value="TO">TO</option>
             <option value="NA">NA</option>
-            <option value="BO">BO</option>
             <!-- Aggiungi altre province -->
           </select>
-        </div>
-        <button type="submit">Registrati</button>
-      </form>
-    </div>
-  </div>
-</body>
-</html>
+        <

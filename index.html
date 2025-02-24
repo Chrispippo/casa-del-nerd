@@ -3,16 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CASA DEL NERD</title>
+  <title>Casa del Nerd</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header stile Amazon -->
   <header>
-    <h1>Benvenuti nel nostro Negozio</h1>
-    <nav>
+    <div class="top-header">
+      <div class="logo">
+        <h1>Casa del Nerd</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Cerca prodotti...">
+        <button>Cerca</button>
+      </div>
+      <div class="account-cart">
+        <a href="admin.html">Account</a>
+        <a href="cart.html">Carrello</a>
+      </div>
+    </div>
+    <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="products.html">Prodotti</a></li>
         <li><a href="buyer_requests.html">Richieste</a></li>
         <li><a href="shipping.html">Spedizione</a></li>
@@ -21,19 +34,39 @@
     </nav>
   </header>
 
+  <!-- Corpo principale -->
   <main>
-    <section class="intro">
-      <h2>Il Tuo Spazio di Shopping Online</h2>
-      <p>Scopri i nostri prodotti suddivisi per categorie. Un’esperienza di acquisto semplice, sicura e accattivante!</p>
+    <section class="banner">
+      <img src="images/banner.jpg" alt="Banner Casa del Nerd">
     </section>
-    <section class="payment">
-      <h2>Pagamento Sicuro con Carta</h2>
-      <p>Paga comodamente con carta di credito o debito, in totale sicurezza.</p>
+    <section class="featured">
+      <h2>Offerte del giorno</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/prodotto1.jpg" alt="Prodotto 1">
+          <h3>Prodotto 1</h3>
+          <p>Breve descrizione del prodotto 1.</p>
+          <button>Paga con Carta</button>
+        </div>
+        <div class="product">
+          <img src="images/prodotto2.jpg" alt="Prodotto 2">
+          <h3>Prodotto 2</h3>
+          <p>Breve descrizione del prodotto 2.</p>
+          <button>Paga con Carta</button>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Il Mio Negozio Online. Tutti i diritti riservati.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
+      <nav class="footer-nav">
+        <a href="shipping.html">Spedizione</a> | 
+        <a href="buyer_requests.html">Richieste</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa del Nerd - Sezioni a Scorrimento</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigazione fissa che funge da sottomenu -->
+  <header>
+    <nav class="scroll-nav">
+      <ul>
+        <li><a href="#prodotti">Prodotti</a></li>
+        <li><a href="#richieste">Richieste</a></li>
+        <li><a href="#spedizioni">Spedizioni</a></li>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#area-riservata">Area Riservata</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Corpo della pagina con le sezioni -->
+  <main>
+    <!-- Sezione Prodotti -->
+    <section id="prodotti" class="scroll-section">
+      <h2>Prodotti</h2>
+      <p>Qui potrai visualizzare l'elenco dei prodotti disponibili. In questa sezione verranno mostrati tutti gli articoli con foto, descrizione e possibilità di acquisto.</p>
+      <!-- Aggiungi qui il layout dei prodotti -->
+    </section>
+
+    <!-- Sezione Richieste -->
+    <section id="richieste" class="scroll-section">
+      <h2>Richieste</h2>
+      <p>Visualizza e gestisci le richieste dei tuoi clienti. In questa sezione potrai vedere le domande e le richieste inviate dagli acquirenti.</p>
+      <!-- Aggiungi qui l'elenco delle richieste -->
+    </section>
+
+    <!-- Sezione Spedizioni -->
+    <section id="spedizioni" class="scroll-section">
+      <h2>Spedizioni</h2>
+      <p>In questa sezione troverai tutte le informazioni riguardanti le spedizioni, i costi e i tempi di consegna.</p>
+      <!-- Aggiungi qui i dettagli delle spedizioni -->
+    </section>
+
+    <!-- Sezione Account -->
+    <section id="account" class="scroll-section">
+      <h2>Account</h2>
+      <form action="#" method="post" class="account-form">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+        </div>
+        <div class="form-group">
+          <label for="cognome">Cognome:</label>
+          <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Data di nascita:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Crea una password" required>
+        </div>
+        <div class="form-group">
+          <label for="cc-number">Numero carta di credito:</label>
+          <input type="text" id="cc-number" name="cc-number" placeholder="Inserisci il numero della carta" required>
+        </div>
+        <div class="form-group">
+          <label for="cc-circuito">Circuito carta:</label>
+          <select id="cc-circuito" name="cc-circuito" required>
+            <option value="" disabled selected>Seleziona il circuito</option>
+            <option value="visa">Visa</option>
+            <option value="paypal">PayPal</option>
+            <option value="postepay">Postepay</option>
+            <option value="mastercard">MasterCard</option>
+          </select>
+        </div>
+        <button type="submit">Aggiorna Account</button>
+      </form>
+    </section>
+
+    <!-- Sezione Area Riservata -->
+    <section id="area-riservata" class="scroll-section">
+      <h2>Area Riservata</h2>
+      <p>Accedi all'area riservata per gestire i contenuti del sito e monitorare gli ordini e le attività degli utenti.</p>
+      <!-- Inserisci qui il modulo di login o altre funzionalità per l'area riservata -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Casa del Nerd. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>

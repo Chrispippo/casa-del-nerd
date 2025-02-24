@@ -1,3 +1,69 @@
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.auth-buttons {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.auth-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Contenuto principale (esempio) */
+.content {
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+}
+
 /* MODAL */
 .modal {
   display: none; /* Nascosto di default */
@@ -22,7 +88,7 @@
   position: relative;
 }
 
-/* Header interno del modal */
+/* Header interno del modal (logo simile ad Amazon) */
 .modal-header {
   text-align: center;
   margin-bottom: 10px;
@@ -49,6 +115,7 @@
   font-weight: bold;
   cursor: pointer;
 }
+
 .close:hover {
   color: #000;
 }
@@ -57,12 +124,14 @@
 .form-group {
   margin-bottom: 15px;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 14px;
 }
+
 .form-group input,
 .form-group select {
   width: 100%;
@@ -72,7 +141,7 @@
   border-radius: 4px;
 }
 
-/* Bottone submit in stile Amazon */
+/* Bottone submit in stile Amazon (colore arancione) */
 .submit-button {
   width: 100%;
   padding: 10px;
@@ -85,6 +154,7 @@
   cursor: pointer;
   margin-top: 10px;
 }
+
 .submit-button:hover {
   background: #f08804;
 }

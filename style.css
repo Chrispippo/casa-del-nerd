@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Corpo */
 body {
   font-family: Arial, sans-serif;
   background: #f2f2f2;
@@ -20,19 +21,26 @@ header {
   text-align: center;
 }
 
-.header-content h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #333;
+.header-content {
+  position: relative;
 }
 
-.auth-buttons {
+.site-title {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.nav-buttons {
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
 }
 
+.nav-buttons a,
 .auth-button {
   margin-left: 10px;
   padding: 10px 15px;
@@ -41,16 +49,116 @@ header {
   color: #fff;
   border: none;
   border-radius: 4px;
+  text-decoration: none;
   cursor: pointer;
 }
 
-/* Contenuto principale (esempio) */
-.content {
-  padding: 30px;
-  text-align: center;
+/* Search Bar */
+.search-bar {
   background: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 70%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Product Grid (stile Wish) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 14px;
+  color: #e60000;
+}
+
+.add-to-cart {
+  padding: 8px 10px;
+  background: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Inquiries Section */
+.inquiries {
+  background: #fff;
+  padding: 20px;
   margin: 20px;
   border: 1px solid #ddd;
+  text-align: center;
+}
+
+.inquiries h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.inquiries form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.inquiries form button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -61,12 +169,12 @@ footer {
   border-top: 1px solid #ddd;
   font-size: 14px;
   color: #666;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
-/* MODAL */
+/* MODALI */
 .modal {
-  display: none; /* Nascosto di default */
+  display: none;
   position: fixed;
   z-index: 2000;
   left: 0;
@@ -88,16 +196,15 @@ footer {
   position: relative;
 }
 
-/* Header interno del modal (logo simile ad Amazon) */
 .modal-header {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .modal-logo {
   max-width: 150px;
 }
 
-/* Titoli dei modali */
 .modal-content h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -105,7 +212,6 @@ footer {
   color: #333;
 }
 
-/* Bottone di chiusura */
 .close {
   color: #aaa;
   position: absolute;
@@ -120,7 +226,6 @@ footer {
   color: #000;
 }
 
-/* Form styling */
 .form-group {
   margin-bottom: 15px;
 }
@@ -141,11 +246,10 @@ footer {
   border-radius: 4px;
 }
 
-/* Bottone submit in stile Amazon (colore arancione) */
 .submit-button {
   width: 100%;
   padding: 10px;
-  background: #ffa41c; /* Arancione tipico di Amazon */
+  background: #ffa41c;
   color: #111;
   border: none;
   border-radius: 4px;
@@ -157,4 +261,71 @@ footer {
 
 .submit-button:hover {
   background: #f08804;
+}
+
+/* Cart Section */
+.cart-section {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
+.cart-section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Checkout in Cart */
+.checkout {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+.checkout h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkout .form-group {
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-section ul {
+  list-style: none;
+}
+
+.contact-section li {
+  margin-bottom: 5px;
+  font-size: 16px;
 }

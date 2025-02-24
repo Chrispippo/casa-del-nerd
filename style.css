@@ -13,7 +13,6 @@ body {
 }
 
 /* HEADER */
-/* Header fisso con sfondo trasparente */
 header {
   position: fixed;
   top: 0;
@@ -56,7 +55,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px; /* per non sovrapporsi al header */
+  margin-top: 70px; /* per evitare la sovrapposizione col header */
 }
 .hero-overlay {
   position: absolute;
@@ -95,14 +94,13 @@ header {
   background: #e0a85a;
 }
 
-/* SEZIONE MENU E SOTTOCARTELLE */
-/* Disposizione a pagina intera sotto il banner */
+/* SEZIONE MENU CON SOTTOMENU SEMPRE VISIBILI */
 .full-menu {
   background: #f7f7f7;
   padding: 40px 20px;
   text-align: center;
 }
-.full-menu .menu-wrapper {
+.menu-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -117,48 +115,35 @@ header {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 0;
 }
 .category-menu > li {
-  position: relative;
+  text-align: left;
 }
 .category-menu > li > a {
   text-decoration: none;
   font-size: 20px;
   color: #007185;
   font-weight: bold;
-  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 10px;
 }
-.category-menu > li > a:hover {
-  color: #005f6a;
-}
-/* Stile per il submenu */
 .submenu {
   list-style: none;
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block; /* sempre visibile */
   background: #fff;
   border: 1px solid #ddd;
-  padding: 10px 0;
-  min-width: 160px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  z-index: 500;
-}
-.category-menu > li:hover .submenu {
-  opacity: 1;
-  visibility: visible;
+  padding: 10px;
+  margin: 0;
 }
 .submenu li {
-  padding: 5px 15px;
+  margin: 5px 0;
 }
 .submenu li a {
   text-decoration: none;
   font-size: 16px;
   color: #333;
-  transition: color 0.3s ease;
+  display: block;
 }
 .submenu li a:hover {
   color: #007185;

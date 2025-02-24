@@ -8,73 +8,21 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header: Logo centrato e pulsante "Accedi" in alto a destra -->
+  <!-- Header: Titolo al centro e pulsanti "Accedi" e "Registrati" in alto a destra -->
   <header>
     <div class="header-content">
       <h1>La Casa del Nerd</h1>
-      <button id="loginButton" class="login-button">Accedi</button>
+      <div class="auth-buttons">
+        <button id="loginButton" class="auth-button">Accedi</button>
+        <button id="registerButton" class="auth-button">Registrati</button>
+      </div>
     </div>
   </header>
   
-  <!-- Top Bar: Barra di ricerca opzionale -->
-  <div class="top-bar">
-    <div class="search">
-      <input type="text" placeholder="Cerca...">
-      <button type="button">🔍</button>
-    </div>
-  </div>
-  
-  <!-- Main: Sezioni dei prodotti -->
+  <!-- Main content (puoi inserire qui il resto del sito, ad esempio le sezioni di prodotti) -->
   <main>
-    <!-- Sezione Articoli 3D -->
-    <section class="section" id="articoli-3d">
-      <h2>Articoli 3D</h2>
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="images/3d-product1.jpg" alt="Articolo 3D 1">
-          <h3>Articolo 3D 1</h3>
-          <p class="price">€29.99</p>
-        </article>
-        <article class="product-card">
-          <img src="images/3d-product2.jpg" alt="Articolo 3D 2">
-          <h3>Articolo 3D 2</h3>
-          <p class="price">€39.99</p>
-        </article>
-      </div>
-    </section>
-    
-    <!-- Sezione Cosplayer -->
-    <section class="section" id="cosplayer">
-      <h2>Cosplayer</h2>
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="images/cosplayer1.jpg" alt="Cosplayer 1">
-          <h3>Cosplayer 1</h3>
-          <p class="price">€49.99</p>
-        </article>
-        <article class="product-card">
-          <img src="images/cosplayer2.jpg" alt="Cosplayer 2">
-          <h3>Cosplayer 2</h3>
-          <p class="price">€59.99</p>
-        </article>
-      </div>
-    </section>
-    
-    <!-- Sezione Accessori Informatica e Articoli Vari -->
-    <section class="section" id="accessori-informatica">
-      <h2>Accessori Informatica e Articoli Vari</h2>
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="images/accessorio1.jpg" alt="Accessorio 1">
-          <h3>Accessorio 1</h3>
-          <p class="price">€19.99</p>
-        </article>
-        <article class="product-card">
-          <img src="images/accessorio2.jpg" alt="Accessorio 2">
-          <h3>Accessorio 2</h3>
-          <p class="price">€24.99</p>
-        </article>
-      </div>
+    <section class="content">
+      <p>Benvenuto in La Casa del Nerd. Qui troverai i migliori articoli per i veri appassionati.</p>
     </section>
   </main>
   
@@ -83,12 +31,12 @@
     <p>&copy; 2025 La Casa del Nerd. Tutti i diritti riservati.</p>
   </footer>
   
-  <!-- Modal Login -->
+  <!-- Modal per il Login -->
   <div id="loginModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Accedi</h2>
-      <form action="#" method="post">
+      <form id="loginForm" action="#" method="post">
         <div class="form-group">
           <label for="loginName">Nome:</label>
           <input type="text" id="loginName" name="loginName" placeholder="Inserisci il tuo nome" required>
@@ -97,7 +45,84 @@
           <label for="loginPassword">Password:</label>
           <input type="password" id="loginPassword" name="loginPassword" placeholder="Inserisci la tua password" required>
         </div>
-        <button type="submit">Accedi</button>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal per la Registrazione -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registrati</h2>
+      <form id="registerForm" action="#" method="post">
+        <div class="form-group">
+          <label for="regNome">Nome:</label>
+          <input type="text" id="regNome" name="regNome" placeholder="Inserisci il tuo nome" required>
+        </div>
+        <div class="form-group">
+          <label for="regCognome">Cognome:</label>
+          <input type="text" id="regCognome" name="regCognome" placeholder="Inserisci il tuo cognome" required>
+        </div>
+        <div class="form-group">
+          <label for="regDataNascita">Data di nascita:</label>
+          <input type="date" id="regDataNascita" name="regDataNascita" required>
+        </div>
+        <div class="form-group">
+          <label for="regLuogoNascita">Luogo di nascita:</label>
+          <select id="regLuogoNascita" name="regLuogoNascita" required>
+            <option value="" disabled selected>Seleziona una città</option>
+            <option value="Roma">Roma</option>
+            <option value="Milano">Milano</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Torino">Torino</option>
+            <option value="Palermo">Palermo</option>
+            <!-- Aggiungi altre città -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="regCittaResidenza">Città di residenza:</label>
+          <select id="regCittaResidenza" name="regCittaResidenza" required>
+            <option value="" disabled selected>Seleziona una città</option>
+            <option value="Roma">Roma</option>
+            <option value="Milano">Milano</option>
+            <option value="Napoli">Napoli</option>
+            <option value="Torino">Torino</option>
+            <option value="Palermo">Palermo</option>
+            <!-- Aggiungi altre città -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="regVia">Via o Piazza:</label>
+          <input type="text" id="regVia" name="regVia" placeholder="Inserisci la via o piazza" required>
+        </div>
+        <div class="form-group">
+          <label for="regNumeroCivico">Numero civico:</label>
+          <input type="text" id="regNumeroCivico" name="regNumeroCivico" placeholder="Inserisci il numero civico" required>
+        </div>
+        <div class="form-group">
+          <label for="regCap">CAP:</label>
+          <select id="regCap" name="regCap" required>
+            <option value="" disabled selected>Seleziona il CAP</option>
+            <option value="00100">00100</option>
+            <option value="20100">20100</option>
+            <option value="10100">10100</option>
+            <!-- Aggiungi altri CAP -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="regProvincia">Provincia:</label>
+          <select id="regProvincia" name="regProvincia" required>
+            <option value="" disabled selected>Seleziona la provincia</option>
+            <option value="RM">RM</option>
+            <option value="MI">MI</option>
+            <option value="TO">TO</option>
+            <option value="NA">NA</option>
+            <option value="BO">BO</option>
+            <!-- Aggiungi altre province -->
+          </select>
+        </div>
+        <button type="submit">Registrati</button>
       </form>
     </div>
   </div>

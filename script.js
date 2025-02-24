@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Gestione modali per Login e Registrazione
   const loginButton = document.getElementById('loginButton');
   const registerButton = document.getElementById('registerButton');
   const loginModal = document.getElementById('loginModal');

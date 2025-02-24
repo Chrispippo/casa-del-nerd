@@ -5,24 +5,19 @@
   box-sizing: border-box;
 }
 
-/* Corpo e font */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   color: #333;
 }
 
-/* Header: Logo centrato e pulsante "Accedi" in alto a destra */
+/* Header: titolo grande e centrato; pulsanti "Accedi" e "Registrati" in alto a destra */
 header {
-  background-color: #fff;
-  padding: 20px 15px;
+  background: #fff;
+  padding: 20px;
   border-bottom: 1px solid #ddd;
   position: relative;
   text-align: center;
-}
-
-.header-content {
-  position: relative;
 }
 
 .header-content h1 {
@@ -32,106 +27,27 @@ header {
   margin: 0;
 }
 
-.login-button {
+.auth-buttons {
   position: absolute;
-  right: 20px;
   top: 50%;
+  right: 20px;
   transform: translateY(-50%);
+}
+
+.auth-button {
+  margin-left: 10px;
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #007185;
+  background: #007185;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* Top Bar: Barra di ricerca opzionale */
-.top-bar {
-  background-color: #fff;
-  padding: 10px 15px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-.search {
-  display: inline-flex;
-  align-items: center;
-}
-
-.search input {
-  padding: 6px 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px 0 0 4px;
-}
-
-.search button {
-  padding: 6px 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-/* Sezioni principali */
-.section {
-  padding: 30px 15px;
-  background-color: #fff;
-  margin-bottom: 15px;
-}
-
-.section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #007185;
-}
-
-/* Griglia dei prodotti */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 0 15px;
-}
-
-/* Scheda prodotto */
-.product-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease;
-  padding: 10px;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-}
-
-.product-card h3 {
-  font-size: 16px;
-  margin: 10px 0;
-  color: #333;
-}
-
-.price {
-  font-size: 14px;
-  color: #e60000;
-}
-
 /* Footer */
 footer {
-  background-color: #fff;
+  background: #fff;
   padding: 10px;
   text-align: center;
   border-top: 1px solid #ddd;
@@ -140,9 +56,18 @@ footer {
   margin-top: 15px;
 }
 
-/* Modal Login */
+/* Contenuto principale (esempio) */
+.content {
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Modal styling */
 .modal {
-  display: none; /* Hidden by default */
+  display: none; /* nascosto di default */
   position: fixed;
   z-index: 2000;
   left: 0;
@@ -150,18 +75,23 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
 }
 
 .modal-content {
-  background-color: #fff;
+  background: #fff;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 500px;
   border-radius: 4px;
   position: relative;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .close {
@@ -174,31 +104,41 @@ footer {
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover {
+  color: #000;
 }
 
-.modal-content h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.modal-content .form-group {
+/* Form styling */
+.form-group {
   margin-bottom: 15px;
 }
 
-.modal-content .form-group label {
+.form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.modal-content .form-group input {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #005f6a;
 }

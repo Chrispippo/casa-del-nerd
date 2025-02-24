@@ -12,26 +12,31 @@ body {
   color: #333;
 }
 
-/* Header: top-bar con logo e ricerca */
+/* Header: testo al centro, grande e bold */
+header {
+  background-color: #fff;
+  padding: 20px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content h1 {
+  font-size: 48px;  /* dimensione grande */
+  font-weight: bold; /* bold */
+  color: #333;
+  margin: 0;
+}
+
+/* Top Bar: barra di ricerca opzionale */
 .top-bar {
   background-color: #fff;
   padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo h1 {
-  font-size: 22px;
-  color: #333;
+  text-align: center;
 }
 
 .search {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -113,4 +118,5 @@ footer {
   border-top: 1px solid #ddd;
   font-size: 14px;
   color: #666;
+  margin-top: 15px;
 }

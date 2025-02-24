@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Commerce Style Shopify</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header con navigazione principale -->
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="submenu">
+          <a href="#">Prodotti</a>
+          <ul class="dropdown">
+            <li><a href="prodotti/categoria1.html">Categoria 1</a></li>
+            <li><a href="prodotti/categoria2.html">Categoria 2</a></li>
+          </ul>
+        </li>
+        <li><a href="spedizione.html">Spedizione</a></li>
+        <li><a href="sessione.html">Richieste</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar laterale con tendina delle categorie -->
+  <aside class="sidebar">
+    <h3>Categorie</h3>
+    <ul>
+      <li><a href="prodotti/categoria1.html">Categoria 1</a></li>
+      <li><a href="prodotti/categoria2.html">Categoria 2</a></li>
+    </ul>
+  </aside>
+
+  <!-- Sezione principale: elenco prodotti -->
+  <main>
+    <section class="products">
+      <h2>Prodotti in Vendita</h2>
+      <!-- Esempio di prodotto -->
+      <div class="product-card">
+        <img src="images/prodotto1.jpg" alt="Prodotto 1">
+        <h3>Prodotto 1</h3>
+        <p>Descrizione breve del prodotto 1.</p>
+        <button class="buy-btn" data-prod="Prodotto 1">Acquista con Carta</button>
+      </div>
+      <!-- Puoi aggiungere altri prodotti seguendo lo stesso schema -->
+    </section>
+  </main>
+
+  <!-- Modal per pagamento con carta -->
+  <div id="
